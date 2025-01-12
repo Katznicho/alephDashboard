@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\ExpenseResource\Pages;
+namespace App\Filament\Resources\AboutusResource\Pages;
 
-use App\Filament\Resources\ExpenseResource;
+use App\Filament\Resources\AboutusResource;
 use Filament\Actions;
 use Filament\Resources\Pages\CreateRecord;
 
-class CreateExpense extends CreateRecord
+class CreateAboutus extends CreateRecord
 {
-    protected static string $resource = ExpenseResource::class;
+    protected static string $resource = AboutusResource::class;
 
     protected function getRedirectUrl(): string
     {
@@ -16,6 +16,6 @@ class CreateExpense extends CreateRecord
     }
     protected function getCreatedNotificationTitle(): ?string
     {
-        return 'Expense Created';
+        return 'About us Created';
     }
 }
